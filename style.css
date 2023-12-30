@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+input {
+    width: 250px;
+    height: 35px;
+}
+
+h1 {
+    background-color: #8cabd3;
+    /* box-shadow: 7px 7px rgb(158, 149, 130); */
+    width: fit-content;
+    margin: 25px auto;
+    padding: 20px 75px;
+    width: 550px;
+    text-align: center;
+    border-radius: 55px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 0.3s ease-in-out;
+    cursor: default;
+}
+
+h1:hover {
+    box-shadow: 7px 7px rgb(150, 135, 105);
+    transition: 0.3s ease-in-out;
+}
+
+tbody {}
+
+tbody td {
+    /* background-color: rgb(83, 114, 118); */
+    min-width: 100px;
+    text-align: start;
+}
+
+
+#CreateForm {
+    background-color: rgb(255, 255, 255);
+    width: 580px;
+    padding: 55px 25px;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.241);
+}
+
+#CsearchInput,
+#TsearchInput {
+    width: 97%;
+}
+
+.divformfirst {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.divformfirst input {
+    width: 47%;
+    margin: 25px;
+}
+
+.divformsec {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.divformsec input {
+    width: 47%;
+    margin: 25px;
+}
+
+#CreateForm input {
+    border: none;
+    border-bottom: 2px solid rgba(95, 117, 123, 0.72);
+    border-radius: 4px;
+    outline: none;
+    margin: 12px 5px;
+    background-color: #dff5ff;
+    padding: 18px;
+    margin: 10px auto;
+}
+
+#TotalDiv {
+    background-color: #e798984a;
+    padding: 15px;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#srccontanier {
+    display: flex;
+}
+
+#CreateForm button {
+    height: 35px;
+    width: 48%;
+    margin: 0 auto;
+}
+
+#TitleInput {
+    width: 97%;
+    margin: 0 auto;
+}
+
+#EditForm {
+    display: none;
+}
+
+
+
+#CsearchInput {
+    display: none;
+}
+
+#EditForm {
+    background-color: rgb(248, 248, 248);
+    width: 50vw;
+    padding: 25px;
+    margin: 0 auto;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.305);
+}
+
+
+.Editinputsdiv {
+    /* background-color: #e79898; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+table {
+    border-radius: 0.2vw;
+    /* min-width: 50vw; */
+    text-align: center;
+    margin: 3vw auto;
+    font-size: 0.9vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    max-width: 50vw;
+}
+
+thead tr {
+    background-color: #8cabd3 !important;
+}
+
+tr:nth-child(even) {
+    background-color: #8cabd3;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(190, 205, 225);
+}
+
+td {
+    text-align: center !important;
+    padding: 0.5vw;
+    min-width: 7vw;
+}
+
+td button {
+    width: 100%;
+    padding: 8px 0;
+}
+
+.TEditBTN {
+    background-color: rgb(141, 112, 45);
+    border: none;
+    color: white;
+}
+
+.TDelBTN {
+    background-color: rgb(143, 58, 58);
+    border: none;
+    color: white;
+
+}
+
+#EditForm {
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: 680px;
+    padding: 55px 25px;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.241);
+
+}
+
+#EditBtn {
+    border: none;
+    background-color: rgba(83, 135, 83, 0.563);
+}
+
+#CancelEdit {
+    background-color: rgba(189, 121, 121, 0.691);
+    border: none;
+    margin-top: 5px !important;
+}
+
+#EditForm input {
+    padding: 15px;
+    margin: 0 auto;
+    width: 90%;
+    background-color: #8cabd379;
+    border: none;
+}
+
+#EditForm label {
+    text-align: start;
+    padding: 5px 55px;
+}
+
+#EditTitleInput {
+    width: 91% !important;
+    margin: 0 auto !important;
+}
+
+#EditForm button {
+    height: 35px;
+    width: 50%;
+    margin: 0 auto;
+}

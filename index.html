@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>CRUDS</h1>
+    <form id="CreateForm">
+        <input pattern="^[a-zA-Z]+$" id="TitleInput" placeholder="Title">
+        <div class="divformfirst">
+            <input pattern="^[0-9]+(\.[0-9]+)?$" class="tot" id="PriceInput" placeholder="Price">
+            <input pattern="^[0-9]+(\.[0-9]+)?$" class="tot" id="TaxesInput" placeholder="Taxes">
+            <input pattern="^[0-9]+(\.[0-9]+)?$" class="tot" id="AdsInput" placeholder="Ads">
+            <input pattern="^[0-9]+(\.[0-9]+)?$" class="tot" id="DiscountInput" placeholder="Discount">
+        </div>
+        <span id="TotalDiv">Total:</span>
+        <div class="divformsec">
+            <input id="CountInput" placeholder="Count">
+            <input id="CategoryInput" placeholder="Category">
+        </div>
+        <br>
+        <button id="CreateBtn">Create</button>
+        <br>
+        <input id="TsearchInput" placeholder="Search by Title">
+        <input id="CsearchInput" placeholder="Search by Category">
+        <div id="srccontanier">
+            <button id="SrchTitle">Search by Title</button>
+            <button id="SrchCat">Search by Category</button>
+        </div>
+        <br>
+        <button type="submit" id="DeleteAll"></button>
+    </form>
+
+    <form id="EditForm">
+        <label>Title</label>
+        <input pattern="^[a-zA-Z]+$" id="EditTitleInput" placeholder="Title">
+        <div class="Editinputsdiv">
+            <label>Price</label>
+            <input pattern="^[0-9]+(\.[0-9]+)?$" id="EditPriceInput" placeholder="Price">
+            <label>Taxes</label>
+            <input pattern="^[0-9]+(\.[0-9]+)?$" id="EditTaxesInput" placeholder="Taxes">
+            <label>Ads</label>
+            <input pattern="^[0-9]+(\.[0-9]+)?$" id="EditAdsInput" placeholder="Ads">
+            <label>Discount</label>
+            <input pattern="^[0-9]+(\.[0-9]+)?$" id="EditDiscountInput" placeholder="Discount">
+        </div>
+        <label>Category</label>
+        <input pattern="^[a-zA-Z]+$" id="EditCategoryInput" placeholder="Category">
+        <br>
+        <button type="submit" id="EditBtn">Edit</button>
+        <button id="CancelEdit">Cancel</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Title</td>
+                <td>Price</td>
+                <td>Taxes</td>
+                <td>Ads</td>
+                <td>Discount</td>
+                <td>Total</td>
+                <td>Category</td>
+                <td>Edit</td>
+                <td>Delete</td>
+            </tr>
+        </thead>
+
+        <tbody></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
